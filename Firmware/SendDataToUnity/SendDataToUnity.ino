@@ -32,7 +32,7 @@ void sendSensorDataToUnity() {
   if (sendToUnityTimer >= sendToUnityInterval) {
     sendToUnityTimer = 0; // reset the timer
 
-    Serial.print(buttonState);
+    Serial.print(switchState);
     Serial.print(',');
     Serial.println(potentiometerValue);
   }
